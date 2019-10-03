@@ -1,0 +1,213 @@
+*{
+  margin:0;
+  padding:0;
+}
+/*img{
+  max-width: 100%;
+}*/
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+h1{
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: #333;
+}
+h3{
+font-family: helvetica, arial, sans-serif;
+text-align: center;
+font-weight: 400;
+color: #333;
+}
+p{
+  font-family: helvetica, arial, sans-serif;
+  margin: 0% 5%;
+  line-height: 1.5;
+}
+/*Forside*/
+.menubar{
+  font-family:helvetica, arial, sans-serif;
+  padding: 15px;
+  border-bottom:1px solid #e0e0d1;
+  margin-bottom: 30px;
+}
+@media (min-width:700px){
+  .menubar{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menubar a{
+  text-decoration: none;
+  color:/*#828046*/ #000000;
+  padding: 0 1em;
+}
+.menubar nav a:hover{
+  color:/*#b9b65c*/#84b0b7;
+}
+.menubar nav{
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 700px) {
+  .menubar nav{
+    padding-top: 4em;
+  }
+}
+.wrapper2{
+  background-color: #e0e0d1;
+}
+@media (min-width:800px) {
+.wrapper2{
+  display: flex;
+  justify-content: space-around;
+}
+}
+.wrapper2 img{
+  min-width:320px;
+}
+.klasse{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.klasse .inner h1, .klasse .inner h2{
+  font-family: 'Mansalva', cursive;
+  font-weight: 500;
+  color: #000;
+}
+.inner {
+  padding: 2em 0;
+}
+@media (min-width:700px) {
+.inner{
+  padding:0;
+}
+}
+
+  /*Projekter*/
+.semester{
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+@media (min-width:800px){
+.image-links {
+  display: flex;
+  justify-content: center;
+}
+}
+.image-links img{
+  max-width:320px;
+}
+.projekt{
+  position: relative;
+  display: flex;
+  margin: 0.7em;
+}
+.infotext{
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:320px;
+  height:100%;
+  background-color: rgba(00, 00, 00, 0.5);
+  color: #ddd;
+  font-size: 1.2em;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  font-family: helvetica, arial, sans-serif;
+}
+.projekt:hover .infotext{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*projekt - cykel og bro*/
+@media (min-width:800px){
+.cykelogbro{
+  display: flex;
+  justify-content: center;
+  background-color: #e0e0d1;
+  margin-top: 1%;
+}
+}
+.cykelogbro img{
+  width:480px;
+  margin: 1%;
+  padding: 1%;
+}
+
+/*om mig*/
+@media (min-width:800px){
+.container{
+  margin-top:30px;
+  display: flex;
+  justify-content: center;
+  background-color: #e0e0d1;
+}
+}
+.container img{
+  max-width:280px;
+  margin:1%;
+}
+.om-mig{
+margin: 15px;
+}
+.about p{
+  margin-top: 20px;
+}
+
+/*kontakt*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #e0e0d1;
+  padding: 20px;
+}
+
+/*footer*/
+.footer{
+  border-top: 1px solid #e0e0d1;
+  margin-top: 30px;
+  display: flex;
+}
+.footer a{
+  text-decoration: none;
+  font-family:helvetica, arial, sans-serif;
+  color:/*#828046*/#000000;
+  margin-top: 15px;
+}
+.footer a:hover{
+  color:/*#b9b65c*/#84b0b7;
+}
